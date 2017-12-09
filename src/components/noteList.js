@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 import noteItem from './components/noteItem.js'
+import noteCreateForm from './noteCreateForm.js'
 
 class noteCreateForm extends React.Component {
 

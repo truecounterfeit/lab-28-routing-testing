@@ -2,6 +2,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import noteCreateForm from './noteCreateForm.js'
+
 class noteItem extends React.Component {
 
   constructor(props) {

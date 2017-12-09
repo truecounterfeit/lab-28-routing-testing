@@ -2,4 +2,4 @@
 
 * npm run start
 * type in: localhost:8080
-* click on ...
+* Page renders a Form that creates notes and displays them in a list.

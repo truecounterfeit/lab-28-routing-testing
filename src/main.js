@@ -4,9 +4,8 @@ import './style/main.scss';
 
 import React from 'react';
 import ReactDom from 'react-dom';
-import uuid from 'uuid';
 
-import noteCreateFrom from './components/noteCreateForm.js'
+import noteCreateForm from './components/noteCreateForm.js'
 import noteItem from './components/noteItem.js'
 import noteList from './noteList.js'
 
@@ -16,9 +15,6 @@ class App extends React.Component {
       super(props);
 
       this.state = {
-          id: uuid,
-          editing: false,
-          completed: false,
           content: this.state
       }
       this.app = this.app.bind(this);
@@ -33,11 +29,14 @@ class App extends React.Component {
     }
 
     render() {
+      console.log('form rendered!');
       return (
+        <form>
         <div>
-
-
+          <noteCreateForm />
+          <noteList />
         </div>
+        </form>
       )
     }
 

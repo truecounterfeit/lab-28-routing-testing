@@ -14,9 +14,9 @@ class App extends React.Component {
     constructor(props) {
       super(props);
 
-      this.state = {
-          content: this.state
-      }
+      // this.state = {
+      //     content: this.state
+      // }
       this.app = this.app.bind(this);
     }
 

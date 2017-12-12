@@ -9,9 +9,9 @@ class noteItem extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-        content: this.state
-    }
+    // this.state = {
+    //     content: this.state
+    // }
     this.noteItem = this.noteItem.bind(this);
     this.handleDeleteButton = this.handleDeleteButton.bind(this);
   }

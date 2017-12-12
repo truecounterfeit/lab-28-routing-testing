@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import ReactDom from 'react-dom';
-import uuid from 'uuid';
+import uuid from 'uuid/v4';
 
 import noteItem from './components/noteItem.js'
 import noteList from './noteList.js'
@@ -12,7 +12,8 @@ class noteCreateForm extends React.Component {
     super(props);
 
     this.state = {
-        content: this.state
+        notes: [],
+        // content: this.state
     }
     this.noteCreateForm = this.noteCreateForm.bind(this);
   }
@@ -26,10 +27,15 @@ class noteCreateForm extends React.Component {
     }
   }
 
-  let newNote = new note();
+  let newNote = new note(
+    id: uuid,
+    editing: false,
+    completed: false,
+    content: this.state
+  );
 
   submitNote() {
-    this.newNote.content = 'pants';
+    return notes.push(newNote);
   }
 
 

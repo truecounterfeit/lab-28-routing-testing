@@ -13,7 +13,6 @@ class noteCreateForm extends React.Component {
 
     this.state = {
         notes: [],
-        // content: this.state
     }
     this.noteCreateForm = this.noteCreateForm.bind(this);
   }
